@@ -1,38 +1,93 @@
 .App {
   text-align: center;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+li {
+  list-style: none;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.menu {
   display: flex;
-  flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  padding: 8px;
+  border-bottom: solid 1px #e1e1e1;
+  margin: 0 auto;
+  width: 30%;
+  margin-bottom: 20px;
+}
+.menu-item {
+  width: 33%;
+  cursor: pointer;
+}
+.active {
+  position: relative;
+}
+.active::after {
+  position: absolute;
+  content: "";
+  background-color: #0887f4;
+  width: 100px;
+  height: 2px;
+  bottom: -10px;
+  left: 50%;
+  transform: translate(-50%);
 }
 
-.App-link {
-  color: #61dafb;
+.input-form {
+  margin-right: 10px;
+  padding: 10px;
+  border: solid 1px #e1e1e1;
+  border-radius: 5px;
+  width: 360px;
+  margin-bottom: 40px;
+  
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.input-add {
+  padding: 10px 20px;
+  background-color: #0084f5;
+  border-radius: 5px;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+}
+.list {
+  width: 30%;
+  margin: 0 auto;
+  padding: 0;
+  margin-bottom: 20px;
+}
+.list-item {
+  display: flex;
+  justify-content: space-between;
+}
+.item-check {
+  width: 20px;
+  height: 20px;
+  cursor: pointer;
+}
+.check {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 10px;
+}
+.delete-all {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  padding: 10px;
+  border: solid 1px #e1e1e1;
+  border-radius: 5px;
+  font-size: 14px;
+  background-color: #FF2F41;
+  color: #e1e1e1;
+  cursor: pointer;
+}
+.detete-ok {
+  width: 30%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: end;
+}
+.delete-item{
+  cursor: pointer;
 }
